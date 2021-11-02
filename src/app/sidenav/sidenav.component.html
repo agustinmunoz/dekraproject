@@ -1,0 +1,253 @@
+
+
+
+ 
+ <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun"> 
+<!--   <div class="example-container"> -->
+ 
+ 
+  
+  <mat-toolbar   class="example-toolbar bg-warning">
+
+
+   
+
+      <button mat-icon-button (click)="snav.toggle()"><mat-icon>menu</mat-icon></button>
+     <!--  <h1 class="example-app-name">Responsive App</h1> -->
+    <!--  <div *ngIf="!usuarioService.getIsLogged()" > -->
+      <!-- <app-search-bar></app-search-bar> -->
+
+      
+
+      <!-- <div class="container row"> -->
+
+        
+         <div class="hidden"><a  href="/regalos-originales.html">  <img src="./assets/images/logo_regalos_header.png" height="40" alt="" loading="lazy"> </a></div>
+         <div class=""><a href="/login"><img src="./assets/images/login.png" width="40" height="40" alt="" loading="lazy"></a></div>
+        
+        <div width="40" height="40"></div>
+
+
+
+      
+       
+       
+       
+       
+       
+       
+      
+         <!--  <div class="container row col-12 justify-content-end">
+
+           
+           
+             
+            <div class="col-9">
+                  <input  #box [(ngModel)]="textoInput"  type="text" class="form-control" >
+                </div>  
+                
+                   
+                   
+ 
+                    <div class="col-3" >
+                      <a href="/search/{{textoInput}}"  (click)="borrarscroll()">
+                     
+                        <button class="btn btn-primary "><span class="material-icons">
+                          search
+                          </span></button>
+                       </a> 
+                   
+            
+            
+                   
+                    
+                      
+                  </div>
+            
+                
+        
+            
+         
+            
+
+
+
+          </div>
+
+        
+         -->
+     
+
+  
+  
+
+    </mat-toolbar>
+    
+  
+    <mat-sidenav-container class="example-sidenav-container" 
+                           [style.marginTop.px]="mobileQuery.matches ? 56 : 0">
+      <mat-sidenav #snav [mode]="mobileQuery.matches ? 'over' : 'side'"
+                   [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="bg-dark">
+        <mat-nav-list>
+            
+          <a  class="text-white" mat-list-item href="paypalngx.html" (click)="snav.toggle()">
+       <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+            pepe</a>
+          <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+           
+         <a class="text-white" mat-list-item href="/freactivo.html" (click)="snav.toggle()">
+                <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+                     {{emitterText}}</a>
+                    
+                     <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />          
+                    
+        <a class="text-white" mat-list-item href="/paypalngx.html" (click)="snav.toggle()">
+                        <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+                       Joaquin</a>
+                             <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+           <a class="text-white" mat-list-item href="/micuenta.html" (click)="snav.toggle()">
+                                <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+                                Hola</a>
+                                     <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+           <a class="text-white" mat-list-item href="/login.html" (click)="snav.toggle()">
+                                        <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+                                      Hola2</a>
+                                             <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+              <a class="text-white" mat-list-item href="/logout.html" (click)="snav.toggle()">
+                                                <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+                                               Hola3</a>                                 
+                                                     <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+            
+             <a class="text-white" mat-list-item href="/pruebaspipe.html" (click)="snav.toggle()">
+                                                      <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+              PruebasPipe</a>                                 
+              <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+
+
+              <a class="text-white" mat-list-item href="/cargadinamica.html" (click)="snav.toggle()">
+                <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+            Carga dinamica</a>                                 
+            <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+
+
+            <a class="text-white" mat-list-item href="/subject.html" (click)="snav.toggle()">
+              <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+          {{subjectData}}</a>                                 
+          <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+
+          <a class="text-white" mat-list-item href="/paginacion.html" (click)="snav.toggle()">
+            <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+        Paginacion</a>                                 
+        <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+
+
+        
+        <a class="text-white" mat-list-item href="/photos.html" (click)="snav.toggle()">
+          <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+      Photos</a>                                 
+      <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+
+
+      <a class="text-white" mat-list-item href="/padrehijo.html" (click)="snav.toggle()">
+        <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
+    Padre-Hijo</a>                                 
+    <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
+
+
+
+
+
+            
+     <!--  <a class="nav-link" routerLink="home"  (click)=Panel()>Home</a>
+      <a class="nav-link" routerLink="freactivo"  (click)=Panel()>FReactivo</a>
+      <a class="nav-link" routerLink="paypalngx"  (click)=Panel()>PaypalNgx</a>
+      <a class="nav-link" *ngIf="usuarioService.getIsLogged()"  routerLink="micuenta"  (click)=Panel()>Miguenta</a>
+      <a class="nav-link" routerLink="login" *ngIf="!usuarioService.getIsLogged()"  (click)=Panel()>Login</a>      
+      <a class="nav-link" *ngIf="usuarioService.getIsLogged()" routerLink="logout">Salir</a> -->
+        </mat-nav-list>
+      </mat-sidenav>
+  
+      <mat-sidenav-content id="mat-sidenav-content">
+       
+       
+    
+  
+
+       <!--  <p *ngFor="let content of fillerContent">{{content}}</p> -->
+ 
+       <router-outlet></router-outlet>
+      
+      
+      </mat-sidenav-content>
+
+      
+     
+    </mat-sidenav-container>
+
+    
+    
+  </div> 
+
+
+
+
+
+    <!-- Modal -->
+
+
+
+   
+    
+  
+
+  
+  <!-- Copyright 2019 Google LLC. All Rights Reserved.
+      Use of this source code is governed by an MIT-style license that
+      can be found in the LICENSE file at http://angular.io/license -->
+
+
+     <!--  // Not mobile -->
+
+      
+
+<!-- <div class="example-container" [class.example-is-mobile]="mobileQuery.matches" *ngIf="shouldRun"> -->
+   
+  
+
+
+ 
+    
+  
+  
+  
+
+
+
+
+
+
+
+
+   <!--  Modal -->
+  
+    <div id="myModal" class="modal fade" role="dialog" #myModal>
+      <div class="modal-dialog">
+    
+        <!-- Modal content-->
+        <div class="modal-content">
+          <div class="modal-header">        
+            <h4 class="modal-title">Carrito de Compra</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+          <!--   <p>{{carrito_respuesta}}</p> -->
+          <p>Hola que tal</p>
+          
+          </div>
+          <div class="modal-footer">
+     <!--        <button type="button" class="btn btn-default" data-dismiss="modal">Ok</button> -->
+          </div>
+        </div>
+    
+      </div>
+    </div>

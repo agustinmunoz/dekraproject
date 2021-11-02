@@ -1,0 +1,145 @@
+<div class="alert alert-danger" *ngIf='invalidLogin'>{{errorMessage}}</div>
+<div *ngIf="!isLogged()" class="container mt-8">
+<form autocomplete="off" [formGroup]="forma" (ngSubmit)="guardar()">
+
+    <div  class="container">
+    
+   <!--  <h3 class="text-primary">Ya tengo una Cuenta</h3> -->
+   <div class="d-flex flex-row-reverse pt-4">
+    <button class="btn btn-primary" routerLink="/registro.html">No Tengo Cuenta / Crear Cuenta</button>
+</div>
+    <hr class="text-primary">
+        <!-- Email -->
+        <div class="row form-group">
+
+             <h3 class="text-primary">Ya tengo una Cuenta</h3>
+    
+
+             <label class="mdc-text-field mdc-text-field--filled">
+                <span class="mdc-text-field__ripple"></span>
+                <input type="text" class="mdc-text-field__input" aria-labelledby="my-label">
+                <span class="mdc-floating-label" id="my-label">Label</span>
+                <span class="mdc-line-ripple"></span>
+              </label>
+
+
+<button mat-button>Basic</button>
+    <button mat-button color="primary">Primary</button>
+    <button mat-button color="accent">Accent</button>
+    <button mat-button color="warn">Warn</button>
+    <button mat-button disabled>Disabled</button>
+
+    <form class="example-form">
+    <mat-form-field class="example-full-width" appearance="fill">
+        <mat-label>Leave a comment</mat-label>
+        <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+      </mat-form-field>
+    </form>
+
+            <label class="col-12 aling-self-center justify-self-center">Username</label>
+            <div class="col-12">
+        
+                <input 
+                class="form-control" 
+                type="text" 
+                placeholder="username"
+                formControlName="email"
+                [class.is-invalid]="getNoValido('email')"
+               
+                
+               
+                
+               
+                >
+                <small class="text-danger" *ngIf="getNoValido('email')">Introduzca un email válido</small>
+               
+        
+            </div>
+        
+        </div>
+
+
+ 
+    
+    
+    
+    <!-- Contraseña -->
+    <div class="row form-group">
+    
+        <label class="col-12 aling-self-center justify-self-center">Contraseña</label>
+        <div class="col-12">
+    
+            <input 
+            class="form-control" 
+            type="password" 
+            placeholder="Contraseña"
+            formControlName="pass"
+            [class.is-invalid]="getNoValido('pass')"
+           
+            >
+            <small class="text-danger" *ngIf="getNoValido('pass')">Introduzca una Contraseña</small>
+         <!--    <small class="text-success" *ngIf="onChangePass()">Contraseña correcta</small> -->
+
+        </div>
+    
+    </div>
+
+
+
+    <div class="row form-group">
+
+    
+        <div class="col-12">
+    
+            <input 
+            class="btn btn-primary btn-block" 
+            type="submit" 
+            placeholder="Nombre"
+             >
+    
+        </div>
+    
+    </div>
+
+
+
+</div>
+</form> 
+<div class="alert alert-danger" *ngIf='invalidLogin'>{{errorMessage}}</div>
+
+<div>
+    
+    <!-- <hr class="text-primary">
+    <hr class="text-primary"> -->
+  <!--   <h3 class="text-primary">Todavía no tengo una cuenta. Crear cuenta nueva</h3> -->
+    <!-- <hr>  
+    <hr class="text-primary"> -->
+
+    
+  <!-- <a class="nav-link" routerLink="/registro.html">Todavía no tengo una cuenta. Crear cuenta nueva</a> -->
+</div>
+
+
+
+
+</div>
+
+
+
+
+
+
+
+<div *ngIf="isLogged()" class="container  pt-8">
+
+Hola Estoy Logeado
+{{authenticationUser}}
+{{nombreUser}}
+
+<button type="button" class="btn btn-secondary" (click)="cerrarSesion()" >Cerrar Sesion </button>
+</div>
+
+
+<div *ngIf="isLogged()" class="container mt-2">
+<!-- <app-micuenta></app-micuenta> -->
+</div>
