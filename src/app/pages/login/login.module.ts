@@ -1,6 +1,6 @@
 import { AppModule } from './../../app.module';
 import { HttpClient } from '@angular/common/http';
-import { NgModule } from '@angular/core';
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
 import { LoginRoutingModule } from './login-routing.module';
@@ -23,5 +23,6 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatInputModule
   ]
+
 })
 export class LoginModule { }

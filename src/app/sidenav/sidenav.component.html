@@ -20,10 +20,12 @@
       
 
       <!-- <div class="container row"> -->
-
+        <button mat-icon-button routerLink="/home" aria-label="Example icon button with a home icon">
+          <mat-icon>home</mat-icon>
+        </button>
         
-         <div class="hidden"><a  href="/regalos-originales.html">  <img src="./assets/images/logo_regalos_header.png" height="40" alt="" loading="lazy"> </a></div>
-         <div class=""><a href="/login"><img src="./assets/images/login.png" width="40" height="40" alt="" loading="lazy"></a></div>
+         <div class="hidden"><a  href="/home">  <img src="./assets/images/dekra_head.png" height="40" alt="" loading="lazy"> </a></div>
+<!--          <div class=""><a href="/login"><img src="./assets/images/login.png" width="40" height="40" alt="" loading="lazy"></a></div> -->
         
         <div width="40" height="40"></div>
 
@@ -90,73 +92,12 @@
                    [fixedInViewport]="mobileQuery.matches" fixedTopGap="56" class="bg-dark">
         <mat-nav-list>
             
-          <a  class="text-white" mat-list-item href="paypalngx.html" (click)="snav.toggle()">
+          <a  class="text-white" mat-list-item routerLink="/home" (click)="snav.toggle()">
        <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-            pepe</a>
+            Home</a>
           <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
            
-         <a class="text-white" mat-list-item href="/freactivo.html" (click)="snav.toggle()">
-                <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-                     {{emitterText}}</a>
-                    
-                     <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />          
-                    
-        <a class="text-white" mat-list-item href="/paypalngx.html" (click)="snav.toggle()">
-                        <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-                       Joaquin</a>
-                             <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-           <a class="text-white" mat-list-item href="/micuenta.html" (click)="snav.toggle()">
-                                <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-                                Hola</a>
-                                     <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-           <a class="text-white" mat-list-item href="/login.html" (click)="snav.toggle()">
-                                        <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-                                      Hola2</a>
-                                             <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-              <a class="text-white" mat-list-item href="/logout.html" (click)="snav.toggle()">
-                                                <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-                                               Hola3</a>                                 
-                                                     <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-            
-             <a class="text-white" mat-list-item href="/pruebaspipe.html" (click)="snav.toggle()">
-                                                      <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-              PruebasPipe</a>                                 
-              <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-
-
-              <a class="text-white" mat-list-item href="/cargadinamica.html" (click)="snav.toggle()">
-                <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-            Carga dinamica</a>                                 
-            <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-
-
-            <a class="text-white" mat-list-item href="/subject.html" (click)="snav.toggle()">
-              <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-          {{subjectData}}</a>                                 
-          <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-
-          <a class="text-white" mat-list-item href="/paginacion.html" (click)="snav.toggle()">
-            <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-        Paginacion</a>                                 
-        <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-
-
-        
-        <a class="text-white" mat-list-item href="/photos.html" (click)="snav.toggle()">
-          <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-      Photos</a>                                 
-      <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-
-
-      <a class="text-white" mat-list-item href="/padrehijo.html" (click)="snav.toggle()">
-        <!--      <mat-icon>{{nav.icon}}</mat-icon>   -->
-    Padre-Hijo</a>                                 
-    <hr style="color: thistle; background-color: thistle; padding: 0; margin: 0;" />
-
-
-
-
-
+         
             
      <!--  <a class="nav-link" routerLink="home"  (click)=Panel()>Home</a>
       <a class="nav-link" routerLink="freactivo"  (click)=Panel()>FReactivo</a>

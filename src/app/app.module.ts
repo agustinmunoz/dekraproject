@@ -17,11 +17,13 @@ import {MatButtonModule} from '@angular/material/button'
 
 import { SidenavComponent } from './sidenav/sidenav.component'
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { MicuentaComponent } from './components/micuenta/micuenta.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    SidenavComponent
+    SidenavComponent,
+    MicuentaComponent
   ],
   imports: [
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
@@ -38,6 +40,7 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     HttpClientModule
    
   ],
+  exports:[MicuentaComponent],
   providers: [],
   bootstrap: [AppComponent]
   
